@@ -1,0 +1,13 @@
+@mixin flex-column($justify-content, $align-items) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-wrap: wrap;
+}
+
+@mixin content-heading {
+  font-weight: bold;
+  font-size: 14px;
+  color: red;
+}
