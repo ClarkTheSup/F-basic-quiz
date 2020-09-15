@@ -12,62 +12,32 @@
   <body>
     <main class="main">
       <figure>
-        <img class="profile-photo" src="./src/assets/1.jpeg" />
+        <img
+          id="profile-photo"
+          class="profile-photo"
+          src="./src/assets/1.jpeg"
+        />
       </figure>
       <span class="hello">HELLO,</span>
       <span class="introduction">
-        MY NAME IS KAMIL 24YO AND THIS IS MY RESUME/CV
+        MY NAME IS <span id="user-name"></span> <span id="user-age"></span>YO
+        AND THIS IS MY RESUME/CV
       </span>
       <hr class="split-line" />
       <section class="about-me">
         <span class="about-me-heading">ABOUT ME</span>
-        <span class="about-me-content">
+        <span id="user-description" class="about-me-content">
           sdfhasfasf asdfasd tqwqwg hwerer qewqwerq asdgasdg qwqdhfg qwrqwe
           asdfa asdfasdf asdfsdfhasfasf asdfasd tqwqwg hwerer qewqwerq asdgasdg
           qwqdhfg qwrqwe asdfa asdfasdf asdfsdfhasfasf asdfasd tqwqwg hwerer
           qewqwerq asdgasdg qwqdhfg qwrqwe asdfa asdfasdf asdf
         </span>
       </section>
-      <section class="education">
+      <section id="education" class="education">
         <span class="education-heading">EDUCATION</span>
-        <div class="education-content-row">
-          <div class="education-content-row-year">1990</div>
-          <div class="education-content-row-content">
-            <span class="education-content-row-content-introduction"
-              >I was born in Katowice</span
-            >
-            <span>d tqwqwg hwerer qewqwerq asdgasdg qwqdhfg qwrqwe</span>
-          </div>
-        </div>
-        <div class="education-content-row">
-          <div class="education-content-row-year">2005</div>
-          <div class="education-content-row-content">
-            <span class="education-content-row-content-introduction"
-              >Secondary school specialising in artistice</span
-            >
-            <span>d tqwqwg hwerer qewqwerq asdgasdg qwqdhfg qwrqwe</span>
-          </div>
-        </div>
-        <div class="education-content-row">
-          <div class="education-content-row-year">2009</div>
-          <div class="education-content-row-content">
-            <span class="education-content-row-content-introduction"
-              >First level graduation in Graphic Design</span
-            >
-            <span>d tqwqwg hwerer qewqwerq asdgasdg qwqdhfg qwrqwe</span>
-          </div>
-        </div>
-        <div class="education-content-row">
-          <div class="education-content-row-year">2012</div>
-          <div class="education-content-row-content">
-            <span class="education-content-row-content-introduction"
-              >Second level graduation in Graphic Design</span
-            >
-            <span>d tqwqwg hwerer qewqwerq asdgasdg qwqdhfg qwrqwe</span>
-          </div>
-        </div>
       </section>
     </main>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
     <script src="src/app.js"></script>
   </body>
 </html>
