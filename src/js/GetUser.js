@@ -1,4 +1,4 @@
-const getEducationList = async (userId) => {
+export const fetchEducationList = async (userId) => {
   const response = await fetch(
     `http://localhost:8080/users/${userId}/educations`,
     {
@@ -6,6 +6,19 @@ const getEducationList = async (userId) => {
     }
   );
   const educationList = await response.json();
+  return educationList;
+};
+
+export const fetchUserInfo = async (userId) => {
+  const response = await fetch(`http://localhost:8080/users/${userId}`, {
+    method: "GET",
+  });
+  const userInfo = await response.json();
+  return userInfo;
+};
+
+export const getEducationList = async (userId) => {
+  const educationList = await fetchEducationList(userId);
   educationList.forEach((education) =>
     $("#education").append(
       '<div class="education-content-row">\n' +
@@ -19,17 +32,14 @@ const getEducationList = async (userId) => {
   );
 };
 
-const getUser = async () => {
-  const response = await fetch("http://localhost:8080/users/0", {
-    method: "GET",
-  });
-  const userInfo = await response.json();
+export const getUser = async () => {
+  const userInfo = await fetchUserInfo(0);
   $("#user-name").text(userInfo.name);
   $("#user-age").text(userInfo.age);
   $("#profile-photo").attr("src", userInfo.avatar);
   $("#user-description").text(userInfo.description);
 
-  getEducationList(userInfo.id);
+  await getEducationList(userInfo.id);
 };
 
 getUser();

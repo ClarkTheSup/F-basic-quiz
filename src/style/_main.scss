@@ -1,8 +1,7 @@
 .main {
   width: 960px;
-  height: 650px;
   margin: 80px auto;
-  padding-top: 40px;
+  padding: 40px 0px;
   background-color: $white;
   @include flex-column(flex-start, center);
 
@@ -65,7 +64,7 @@
   .education-content-row-content {
     width: 100%;
     background-color: $gray-light;
-    padding-left: 10px;
+    padding: 0px 10px;
     @include flex-column(space-evenly, flex-start);
   }
 
