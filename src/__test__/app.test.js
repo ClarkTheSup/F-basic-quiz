@@ -1,6 +1,7 @@
 import { fetchEducationList } from "../js/FetchEducationList";
 import { fetchUserInfo } from "../js/FetchUserInfo";
 
+// TODO feedback: 不应该直接测试请求调用，建议mock API请求
 test("given existed user id then get all user info when call fetchUserInfo()", async () => {
   const result = await fetchUserInfo(0);
   expect(result.name).toBe("JACK");

@@ -11,6 +11,7 @@
   </head>
   <body>
     <main class="main">
+      <!--      // TODO feedback: 不建议使用figure，只有一个图片用img就可以了-->
       <figure>
         <img
           id="profile-photo"
@@ -25,6 +26,7 @@
       </span>
       <hr class="split-line" />
       <section class="about-me">
+        <!--        // TODO feedback:这里和js添加内容的逻辑重复-->
         <span class="about-me-heading">ABOUT ME</span>
         <span id="user-description" class="about-me-content">
           sdfhasfasf asdfasd tqwqwg hwerer qewqwerq asdgasdg qwqdhfg qwrqwe
@@ -37,6 +39,7 @@
         <span class="education-heading">EDUCATION</span>
       </section>
     </main>
+    <!--    // TODO feedback:建议用npm去管理包依赖-->
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
     <script src="src/app.js"></script>
   </body>
